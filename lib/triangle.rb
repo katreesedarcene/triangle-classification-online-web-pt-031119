@@ -7,7 +7,13 @@ class Triangle
     @scalene = scalene
   end
   def kind 
-    
+    :equilateral
+
+:isosceles
+
+:scalene
+
+
   end
 
 
