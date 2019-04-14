@@ -1,19 +1,18 @@
 class Triangle
-  attr_reader :equilateral, :isosceles, :scalene
+  attr_reader :a, :b, :c
   
   def initialize(equilateral, isosceles, scalene)
-    @equilateral = equilateral 
-    @isosceles = isosceles 
-    @scalene = scalene
+@a = a 
+
   end
   def kind 
-    :equilateral
-
-:isosceles
-
-:scalene
-
-
+  if ((a == b) && (a == c) && (b == c))
+    return :equilateral
+  elsif ((a == b) || (a == c) || (b == c))
+    return :isosceles
+  else
+    return :scalene
+  end
   end
 
 
