@@ -7,7 +7,7 @@ class Triangle
      @c = c
   end
   def kind 
-  if ((a == b) && (a == c) && (b == c))
+  if ((a == b) && (b == c))
     return :equilateral
   elsif ((a == b) || (b == c) || (a == c))
     return :isosceles
