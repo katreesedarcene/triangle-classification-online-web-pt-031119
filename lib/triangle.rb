@@ -17,7 +17,13 @@ class Triangle
   end
   end
   def validated_triangle 
-    
+    self.validated_triangle = triangle
+    if triangle.class != Triangle 
+      raise TriangleError 
+    else
+      triangle.validated_triangle = self
+    end
+  end
   class TriangleError < StandardError 
     
   end
