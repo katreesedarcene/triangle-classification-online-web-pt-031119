@@ -16,7 +16,8 @@ class Triangle
      :scalene
   end
   end
-  
+  def validated_triangle 
+    
   class TriangleError < StandardError 
     
   end
