@@ -9,7 +9,7 @@ class Triangle
   def kind 
   if ((a == b) && (a == c) && (b == c))
     return :equilateral
-  elsif ((a == b) || (a == c) || (b == c))
+  elsif ((a == b) || (b == c) || (b == c))
     return :isosceles
   else
     return :scalene
